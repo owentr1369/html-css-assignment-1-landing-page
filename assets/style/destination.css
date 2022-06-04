@@ -1,0 +1,118 @@
+.destination {
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+.destination .destination__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.destination .destination__heading h1 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #05101f;
+  width: 484px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+}
+.destination .destination__heading p {
+  width: 507px;
+  height: 56px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #52575f;
+  margin-top: 16px;
+}
+.destination .destination__heading .destination__btn {
+  display: flex;
+  flex-direction: row;
+}
+.destination .destination__heading .destination__btn .prev,
+.destination .destination__heading .destination__btn .next {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #3685fb;
+  pointer-events: all;
+  cursor: pointer;
+}
+.destination .destination__heading .destination__btn .next {
+  transform: rotate(180deg);
+  margin-left: 18px;
+}
+.destination .destination__places {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.destination .destination__places .destination__place {
+  position: relative;
+  width: 270px;
+  height: 414px;
+}
+.destination .destination__places .destination__place .destination__place-name {
+  content: "";
+  position: absolute;
+  background: rgba(5, 16, 31, 0.15);
+  backdrop-filter: blur(30px);
+  width: 238px;
+  height: 94px;
+  border-radius: 12px;
+  left: 16px;
+  bottom: 16px;
+  opacity: 0;
+  transform: translateY(80px) scale(0.5);
+  transition: 0.5s;
+}
+.destination
+  .destination__places
+  .destination__place:hover
+  .destination__place-name {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+}
+.destination
+  .destination__places
+  .destination__place
+  .destination__place-name
+  .name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #eff3ff;
+  text-align: center;
+  height: 28px;
+  margin: 18px 0px 2px;
+}
+.destination
+  .destination__places
+  .destination__place
+  .destination__place-name
+  .country {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  height: 28px;
+  margin: 0;
+}

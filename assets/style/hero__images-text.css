@@ -2,6 +2,7 @@
   padding-top: 64px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 70px;
 }
 .hero__images-text .hero__images {
   min-height: 204px;
