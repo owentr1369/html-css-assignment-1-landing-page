@@ -1,0 +1,119 @@
+.hero__images-text {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: row;
+}
+.hero__images-text .hero__images {
+  min-height: 204px;
+  width: 570px;
+  position: relative;
+  height: 600px;
+}
+.hero__images-text .hero__images .hero__image-big {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.hero__images-text .hero__images .hero__image-small {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero__images-text .hero__images .hero__image-vector {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero__text {
+  width: 470px;
+  margin-left: 130px;
+  margin-top: 98px;
+}
+.hero__text .hero__text-book {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #14b8a7;
+  width: 90px;
+  height: 30px;
+}
+.hero__text .hero__text-heading {
+  margin: 0;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  color: #05101f;
+  width: 100%;
+  height: 144px;
+  position: relative;
+}
+.hero__text .hero__text-heading img {
+  position: absolute;
+  top: 20px;
+  right: 83px;
+}
+.hero__text .hero__text-content {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #52575f;
+  margin-top: 22px;
+}
+.hero__text .hero__text-actions {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.hero__text .hero__text-actions .hero__text-actions-btn {
+  height: 64px;
+  width: 180px;
+  border-radius: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  text-align: center;
+  color: #ffffff;
+}
+.hero__text .hero__text-actions .hero__text-actions-watch {
+  width: 61px;
+  height: 80px;
+  position: relative;
+  margin-left: 26px;
+  margin-right: 36px;
+  cursor: pointer;
+}
+.hero__text .hero__text-actions .hero__text-actions-watch img {
+  position: absolute;
+  z-index: 1;
+}
+.hero__text .hero__text-actions .hero__text-actions-watch svg {
+  position: absolute;
+  z-index: 2;
+  right: -56px;
+  top: 12px;
+}
+.hero__text .hero__text-actions .hero__text-actions-watch-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #05101f;
+  position: absolute;
+  right: 0;
+}
