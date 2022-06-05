@@ -88,14 +88,26 @@
     margin-right: 0;
     text-align: center;
   }
+  .package {
+    text-align: center;
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+  }
   .package .package__cards {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
   }
+  .package .package__heading p {
+    height: auto;
+    width: 100%;
+    padding: 0 32px;
+  }
   .package .package__cards .package__card {
     width: 100%;
+    text-align: left;
   }
   .package .package__cards .package__card img {
     width: 100%;

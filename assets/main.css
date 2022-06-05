@@ -8,7 +8,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Sen", sans-serif;
+  font-family: "Sen", "Poppins", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
