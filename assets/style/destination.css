@@ -59,7 +59,7 @@
 }
 .destination .destination__heading .destination__btn .prev:hover path,
 .destination .destination__heading .destination__btn .next:hover path {
-  color: #fff;
+  stroke: #fff;
 }
 .destination .destination__heading .destination__btn .next {
   transform: rotate(180deg);

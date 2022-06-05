@@ -22,8 +22,11 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
-  color: #05101f;
   position: relative;
+}
+.hero__menu .logo-search__box .logo a {
+  color: #05101f;
+  text-decoration: none;
 }
 .hero__menu .logo-search__box .logo::after {
   content: "";
@@ -37,9 +40,6 @@
 }
 .hero__menu .logo-search__box .logo:hover {
   cursor: pointer;
-}
-.hero__menu .logo-search__box .logo__dot {
-  color: #3685fb;
 }
 .hero__menu .logo-search__box .search__box {
   box-sizing: border-box;
@@ -85,19 +85,56 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0;
+  position: relative;
+  align-items: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .hero__menu .hero__navbar ul .navbar__item {
   list-style: none;
   width: 49px;
   height: 28px;
-  left: 735px;
-  top: 47px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   width: fit-content;
+  position: relative;
+}
+.hero__menu .hero__navbar ul .navbar__item::after,
+.hero__menu .hero__navbar ul .navbar__item .active {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #3685fb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: width 0.5s;
+}
+.hero__menu .hero__navbar ul .active::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #3685fb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+}
+.hero__menu .hero__navbar ul .navbar__item:hover::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #3685fb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: width 0.3s;
 }
 .hero__menu .hero__navbar ul .navbar__item a {
   font-family: "Poppins";
@@ -108,15 +145,22 @@
   text-align: center;
   color: #52575f;
   text-decoration: none;
+  width: fit-content;
 }
 .hero__menu .hero__navbar ul .navbar__item:hover {
   cursor: pointer;
 }
+.hero__menu .hero__navbar ul .navbar__item:hover a {
+  font-weight: 600;
+  color: #3685fb;
+  transition: 0.3s;
+}
 .hero__menu .hero__navbar ul .active a {
   color: #3685fb;
-  border-bottom: 2px solid #3685fb;
   font-weight: 600;
-  /* border-bottom-width: 12px; */
+}
+.hero__menu .hero__navbar ul .navbar__item:last-child::after {
+  display: none;
 }
 .hero__menu .hero__navbar ul .navbar__btn {
   width: 144px;
