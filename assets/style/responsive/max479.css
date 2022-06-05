@@ -212,6 +212,9 @@
   .newsletter .newsletter__content .newsletter__content-header {
     font-size: 20px;
   }
+  .newsletter .newsletter__content .newsletter__content-text {
+    width: 100%;
+  }
   .newsletter .newsletter__input {
     align-self: flex-end;
     width: 100%;
