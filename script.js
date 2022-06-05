@@ -7,4 +7,3 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".prev",
   },
 });
-//
