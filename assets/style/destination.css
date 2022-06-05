@@ -1,8 +1,10 @@
 .destination {
-  padding-left: 135px;
-  padding-right: 135px;
+  padding-left: 135px !important;
+  padding-right: 135px !important;
+  margin-right: 135px;
   margin-top: 170px;
   margin-bottom: 170px;
+  position: relative;
 }
 .destination .destination__heading {
   display: flex;
@@ -50,6 +52,15 @@
   pointer-events: all;
   cursor: pointer;
 }
+.destination .destination__heading .destination__btn .prev:hover,
+.destination .destination__heading .destination__btn .next:hover {
+  background-color: #3685fb;
+  color: #fff;
+}
+.destination .destination__heading .destination__btn .prev:hover path,
+.destination .destination__heading .destination__btn .next:hover path {
+  color: #fff;
+}
 .destination .destination__heading .destination__btn .next {
   transform: rotate(180deg);
   margin-left: 18px;
@@ -59,10 +70,35 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+  overflow: visible;
+  cursor: grab;
+  position: relative;
+  z-index: 9;
+}
+.destination::after {
+  content: "";
+  width: 135px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  top: 0;
+}
+.destination::before {
+  content: "";
+  width: 135px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 .destination .destination__places .destination__place {
   position: relative;
-  width: 270px;
+  width: 270px !important;
   height: 414px;
 }
 .destination .destination__places .destination__place .destination__place-name {

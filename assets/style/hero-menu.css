@@ -3,6 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 36px;
+  position: relative;
+  height: 50px;
 }
 .hero__menu .logo-search__box {
   display: flex;
@@ -10,18 +12,28 @@
   width: 438px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .hero__menu .logo-search__box .logo {
   width: 109px;
   height: 34px;
-  left: 135px;
-  top: 44px;
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
   color: #05101f;
+  position: relative;
+}
+.hero__menu .logo-search__box .logo::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #3685fb;
+  bottom: 9px;
+  right: 6px;
+  border-radius: 50%;
 }
 .hero__menu .logo-search__box .logo:hover {
   cursor: pointer;
@@ -87,10 +99,20 @@
   line-height: 28px;
   width: fit-content;
 }
+.hero__menu .hero__navbar ul .navbar__item a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #52575f;
+  text-decoration: none;
+}
 .hero__menu .hero__navbar ul .navbar__item:hover {
   cursor: pointer;
 }
-.hero__menu .hero__navbar ul .active {
+.hero__menu .hero__navbar ul .active a {
   color: #3685fb;
   border-bottom: 2px solid #3685fb;
   font-weight: 600;
@@ -112,6 +134,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .hero__menu .hero__navbar ul .navbar__btn:hover {
   cursor: pointer;
 }
